@@ -33,10 +33,37 @@ To develop a Python class with functions to:
 
 ---
 
-## 💻 PROGRAM:
-
-ADD CODE HERE
-
+##  PROGRAM:
+```
+class Numbers:
+    def __init__(self, N=0):
+        self.N = int(input())
+    def create_list(self):
+        self.L=[]
+        for i in range(self.N):
+            x=int(input())
+            self.L.append(x)
+    def sorting(self):
+        for i in range(1,len(self.L)):
+            key=self.L[i]
+            j=i-1
+            while j>=0 and key < self.L[j]:
+                self.L[j+1]=self.L[j]
+                j=j-1
+            self.L[j+1]=key
+    def print_List(self):
+        for i in range(self.N):
+            print(self.L[i])
+L1=Numbers()
+L1. create_list()
+print('Before Sorting')
+L1.print_List()
+L1.sorting()
+print('After Sorting')
+L1.print_List()
+```
 ## OUTPUT:
+<img width="455" height="576" alt="image" src="https://github.com/user-attachments/assets/04c0c242-00b0-4299-8e6f-dd6ed93ab233" />
 
 ## RESULT:
+Thus,the program is executed successfully
